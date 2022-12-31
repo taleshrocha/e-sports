@@ -13,10 +13,10 @@ const prisma = new PrismaClient({
 
 app.get('/games', async (request, response) => {
   const games = await prisma.game.findMany({
-    include : {
-      _count : {
-        select : {
-          ads : true,
+    include: {
+      _count: {
+        select: {
+          ads: true,
         }
       }
     }
@@ -66,7 +66,7 @@ app.get('/games/:id/ads', async (request, response) => {
     orderBy: {
       createdAt: 'desc',
     },
-    
+
   })
 
   return response.json(ads.map(ad => {
