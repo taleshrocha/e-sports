@@ -11,7 +11,7 @@
 <div align="center">
 <img src="./images/logo-nlw-esports.svg" Alt="eSports logo" width="100" height="100">
 
-<H3 align="center">Moveit</h3>
+<H3 align="center">Esports</h3>
 
   <p align="center">
   The eSports API
